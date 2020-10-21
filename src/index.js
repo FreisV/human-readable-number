@@ -56,9 +56,6 @@ module.exports = function toReadable(number) {
     } else if (number < 1000) {
 				hundred = Math.floor(number / 100);
 				dozen = Math.floor(number / 10 % 10);
-				console.log(`hundred: ${hundred}`);
-				console.log(`dozen: ${dozen}`)
-
         if (dozen == 0) {
             if (number % 10 == 0) {
                 return numbers[hundred] + " " + "hundred";
@@ -95,5 +92,3 @@ module.exports = function toReadable(number) {
         }
     } 
 }
-
-//console.log(toReadable(999));
